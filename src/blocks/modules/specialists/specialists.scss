@@ -1,0 +1,53 @@
+.specialists {
+    padding: 90px 0 200px;
+    background-image: linear-gradient(to bottom, rgba(40, 43, 100, 0.04) 0%, rgba(14, 114, 183, 0.04) 100%);
+
+    .container {
+        position: relative;
+    }
+
+    &__title {
+        margin-left: 50%;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 500;
+        }
+    }
+
+    &__index {
+        margin-top: 45px;
+        margin-left: 50%;
+
+        ul {
+
+            li {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 25px;
+                margin-left: 16px;
+
+                &:before {
+                    content: "\2022";
+                    color: #16afe0;
+                    font-size: 18px;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+    }
+
+    &__dashboard {
+        width: 940px;
+        position: absolute;
+        top: -168px;
+        left: -421px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

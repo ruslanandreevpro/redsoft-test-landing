@@ -1,0 +1,96 @@
+.opportunities {
+    padding: 160px 0 200px;
+    background: url("../img/ig-bg-opportunities.png") no-repeat -370px -370px / 3397px 2173px;
+
+    &__title {
+        text-align: center;
+
+        h2 {
+            color: #31496b;
+            font-size: 36px;
+            font-weight: 500;
+        }
+    }
+
+    &__index {
+        margin-top: 105px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        ul {
+
+            li {
+                width: 570px;
+                margin-left: 60px;
+                position: relative;
+
+                h4 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+
+                &:before {
+                    content: url("../img/ic-semicircle.png");
+                    width: 123px;
+                    height: 123px;
+                    position: absolute;
+                    top: -35px;
+                    left: -110px;
+                }
+
+                &:after {
+                    color: rgba(35, 179, 226, 0.4);
+                    font-size: 60px;
+                    font-weight: 500;
+                    line-height: 1;
+                    position: absolute;
+                    top: -5px;
+                    left: -63px;
+                }
+
+                &:nth-child(1) {
+
+                    &:after {
+                        content: '1';
+                    }
+                }
+
+                &:nth-child(2) {
+                    margin-top: 90px;
+
+                    &:after {
+                        content: '2';
+                    }
+                }
+
+                &:nth-child(3) {
+                    margin-top: 90px;
+
+                    &:after {
+                        content: '3';
+                    }
+                }
+            }
+        }
+
+        &_image {
+            width: 611px;
+            position: absolute;
+            top: 50%;
+            right: -110px;
+            transform: translateY(-50%);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+mixin header-menu(...items)
+    .header__menu
+        .header__menu_logo
+            img(src="./img/logo-header.png")
+        .header__menu_items
+            ul
+                each item in items
+                    li
+                        a(href=item.link class="smooth-scroll") #{item.text}
+        a(href="#" class="header__menu_order") Оставить заявку

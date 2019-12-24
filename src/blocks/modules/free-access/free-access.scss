@@ -1,0 +1,84 @@
+.free-access {
+    padding: 150px 0;
+    background-image: linear-gradient(to bottom, rgba(14, 115, 183, 0.1) 0%, rgba(40, 43, 100, 0.1) 100%);
+
+    &__title {
+        text-align: center;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 500;
+        }
+    }
+
+    &__subtitle {
+        width: 590px;
+        margin: 60px auto 0;
+        text-align: center;
+
+        p {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+        }
+    }
+
+    &__subscribe {
+        margin-top: 60px;
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                width: 360px;
+                height: 60px;
+                border-radius: 30px;
+                border: 1px solid #4f699b;
+                background-color: transparent;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 0 20px;
+
+                &::placeholder {
+                    color: #a8b2bf;
+                }
+            }
+
+            .fa-submit {
+                margin-left: 40px;
+                width: 159px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 30px;
+                background-color: #e70067;
+                color: #fdfffc;
+                font-size: 16px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all .25s ease-in-out;
+
+                &:disabled {
+                    background-color: #d3d3d3;
+                }
+
+                &:hover {
+                    background-color: #5489c3;
+                    color: #fafbfd;
+                    width: 183px;
+                    margin-left: 16px;
+
+                    &:disabled {
+                        background-color: #d3d3d3;
+                        width: 159px;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

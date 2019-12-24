@@ -1,0 +1,22 @@
+include ../../components/header-menu/header-menu
+
+header#header.header
+    .container
+        +header-menu({link: "#about", text: "О сервисе"}, {link: "#functions", text: "Функции"}, {link: "#opportunities", text: "Возможности"}, {link: "#", text: "Партнеры"})
+    ul.header__slider
+        li
+            .image
+                img(src="./img/bg-slide-01.png")
+                img(src="./img/ig-bg-header.png" class="bg")
+            .text
+                h1 Расширяем возможности предоставления качественных медицинских услуг
+                p «Дневник здоровья» – новый сервис для самоконтроля показателей&nbsp;состояния&nbsp;здоровья, разработанный для участников&nbsp;программы «Мое здоровье».
+                .more Узнать больше
+        li
+            .image
+                img(src="./img/bg-slide-02.png")
+                img(src="./img/ig-bg-header.png" class="bg")
+            .text
+                h1 Следить за здоровьем станет проще
+                p Скоро вы сможете находиться на связи со своим лечащим врачом независимо от своего местоположения, вести&nbsp;дневник&nbsp;мониторинга самочувствия, получать рекомендации по плану лечения и многое другое.
+                .more Узнать больше

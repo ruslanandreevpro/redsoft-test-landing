@@ -1,0 +1,18 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Мое здоровье - Программа доступного лечения"
+
+block content
+	include ../blocks/modules/header/header
+	include ../blocks/modules/about/about
+	include ../blocks/modules/functions/functions
+	include ../blocks/modules/opportunities/opportunities
+	include ../blocks/modules/specialists/specialists
+	include ../blocks/modules/free-access/free-access
+	include ../blocks/modules/footer/footer
+	
+block scripts
+	script(src="./js/main.js")
+	script(src="./js/vendor.js")

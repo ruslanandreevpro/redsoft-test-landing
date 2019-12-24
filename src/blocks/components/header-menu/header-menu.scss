@@ -1,0 +1,82 @@
+.header__menu {
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+
+    &_logo {
+        width: 200px;
+        height: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &_items {
+        margin-left: auto;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-right: 50px;
+                position: relative;
+
+                a {
+                    color: #fdfffc;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+
+                    &:after {
+                        content: "\2022";
+                        color: #ffffff;
+                        font-size: 16px;
+                        font-weight: bold;
+                        display: inline-block;
+                        position: absolute;
+                        bottom: -16px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    &_order {
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        border: 2px solid #5489c3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fdfffc;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        margin-left: 70px;
+        transition: all .25s ease-in-out;
+
+        &:hover {
+            width: 224px;
+            background-color: #5489c3;
+            color: #fafbfd;
+            margin-left: 46px;
+        }
+    }
+}

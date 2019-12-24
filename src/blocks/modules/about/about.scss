@@ -1,0 +1,94 @@
+.about {
+    padding: 140px 0 30px;
+    background: url("../img/ig-bg-about.png") no-repeat -1800px -900px/ 2777px 1459px;
+    
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        width: 335px;
+        height: 652px;
+        margin-left: 125px;
+    }
+
+    &__content {
+        margin-left: 45px;
+
+        &_title {
+    
+            h2 {
+                font-size: 36px;
+                font-weight: 500;
+            }
+        }
+    
+        &_text {
+            margin-top: 30px;
+    
+            p {
+                font-size: 16px;
+            }
+        }
+    
+        &_index {
+            margin-top: 25px;
+            width: 470px;
+    
+            ul {
+    
+                li {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 25px;
+                    margin-left: 16px;
+    
+                    &:before {
+                        content: "\2022";
+                        color: #16afe0;
+                        font-size: 18px;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+            }
+        }
+
+        &_order {
+            margin-top: 40px;
+
+            .submit {
+                width: 200px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+                background-color: #e70067;
+                font-size: 16px;
+                font-weight: 700;
+                color: #fdfffc;
+                cursor: pointer;
+                transition: all .25s ease-in-out;
+
+                &:hover {
+                    background-color: #5489c3;
+                    color: #fafbfd;
+                    width: 224px;
+                }
+            }
+        }
+    }
+
+    &__pulse-diagram {
+        width: 485px;
+        height: 485px;
+        position: absolute;
+        bottom: -265px;
+        left: 960px;
+    }
+}
